@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #132542;
+    --secondary-color-1: #1a385a;
+    --secondary-color-2: white;
+    --secondary-color-3: #ffffff80;
+}
+
+.mi10 {
+    margin-inline: 10px;
+}
+
+/* .container {
+    max-width: 1200px;
+} */
+
+@media (min-width: 1400px){
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.ver-al-m {
+    vertical-align: middle;
+}
