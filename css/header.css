@@ -50,7 +50,7 @@
     background-color: #f1f1f1;
 }
 
-@media (max-width: 768px){
+@media (max-width: 991px){
     .mid-nav .container {
         justify-content: center;
     }
