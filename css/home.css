@@ -1,0 +1,127 @@
+/* Start The Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicators [data-bs-target] {
+    background-color: var(--primary-color);
+}
+
+.carousel {
+    background-color: #e0ded9;
+    height: 503px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    font-size: 180%;
+    color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    padding-inline: 63px;
+}
+
+.active.carousel-item-start, .carousel-item-prev:not(.carousel-item-end) {
+    transform: translate(-100%, -50%);
+}
+
+.active.carousel-item-end, .carousel-item-next:not(.carousel-item-start) {
+    transform: translate(100%, -50%);
+}
+/* End The Carousel */
+
+/* Start The User Spaces Section */
+.user-spaces {
+    min-height: 360px;
+    background-color: var(--secondary-color-2);
+    padding-block: 20px;
+}
+
+.user-spaces li {
+    background-color: var(--primary-color);
+    color: var(--secondary-color-2);
+    height: 240px;
+    position: relative;
+    text-align: center;
+    border: 1px solid var(--secondary-color-2);
+}
+
+.user-spaces li .more {
+    background-color: var(--primary-color);
+    width: 38px;
+    height: 38px;
+    line-height: 34px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color-2);
+    z-index: 1;
+    color: inherit;
+}
+
+.user-spaces li:first-child,
+.user-spaces li:last-child,
+.user-spaces li:first-child .more,
+.user-spaces li:last-child .more  {
+    background-color: var(--secondary-color-1);
+}
+/* End The User Spaces Section */
+
+/* Start The About Section */
+.about {
+    background-color: #e0ded9;
+    color: black;
+    padding-block: 20px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+.about .col {
+    margin: auto;
+}
+
+.about .thumbnail_container {
+    border: 2px solid var(--secondary-color-3);
+}
+/* End The About Section */
+
+/* Start The Chiffre Section */
+.chiffre {
+    background: url(../img/classe.jpg) no-repeat center center / cover;
+    color: var(--secondary-color-2);
+}
+
+.chiffre .container-fluid {
+    text-align: center;
+    padding-block: 90px;
+    background-color: #132542d9;
+}
+
+.chiffre p {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.chiffre li {
+    padding-block: 20px;
+}
+
+.chiffre .counter {
+    font-size: 45px;
+    text-align: justify;
+}
+
+.chiffre .title {
+    font-size: 20px;
+    font-weight: 500;
+}
+/* End The Chiffre Section */

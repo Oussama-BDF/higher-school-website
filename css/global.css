@@ -1,8 +1,8 @@
 :root {
     --primary-color: #132542;
     --secondary-color-1: #1a385a;
-    --secondary-color-2: white;
-    --secondary-color-3: #ffffff80;
+    --secondary-color-2: #f1f1f1;
+    --secondary-color-3: #c3bdb7;
 }
 
 .mi10 {
@@ -21,4 +21,8 @@
 
 .ver-al-m {
     vertical-align: middle;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--secondary-color-3) !important;
 }
