@@ -1,6 +1,6 @@
 <!-- Start The Carousel -->
 <?php
-$category = get_category_by_slug('Annonce');
+$category = get_category_by_slug('Carousel');
 if ($category) :
     $category_id = $category->term_id;
     $category_link = get_category_link($category_id);

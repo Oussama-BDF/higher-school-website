@@ -2,7 +2,11 @@
     --primary-color: #132542;
     --secondary-color-1: #1a385a;
     --secondary-color-2: #f1f1f1;
-    --secondary-color-3: #c3bdb7;
+    --secondary-color-3: #a7a29d;
+}
+
+body {
+    background-color: var(--secondary-color-2);
 }
 
 .mi10 {
