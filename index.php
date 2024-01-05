@@ -1,11 +1,16 @@
+<?php
+/**
+ * The main template file, which is the home page.
+ * 
+ * @package EST-SB
+ */
+?>
 <?php get_header(); ?>
 
-<?php include "components/carousel.php"; ?>
-<?php include "components/user_spaces.php"; ?>
-<?php include "components/about.php"; ?>
-<?php include "components/chiffre.php"; ?>
-<?php include "components/actualite.php"; ?>
-<?php include "components/evenement.php"; ?>
-<?php include "components/departement.php"; ?>
+    <?php get_template_part("template-parts/carousel"); ?>
+    <?php get_template_part("template-parts/user_spaces"); ?>
+    <?php get_template_part("template-parts/about"); ?>
+    <?php get_template_part("template-parts/chiffre"); ?>
+    <?php get_template_part("template-parts/posts"); ?>
 
 <?php get_footer(); ?>
