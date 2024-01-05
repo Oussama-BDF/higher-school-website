@@ -1,0 +1,47 @@
+.post .main-post .post-title {
+    background-color: var(--primary-color-2);
+    color: var(--secondary-color-2);
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.departement .wp-block-group > .wp-block-group {
+    padding-bottom: 40px;
+}
+
+
+
+.custom-post-container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.custom-post-container a {
+    color: #777;
+    text-decoration: none;
+}
+
+.custom-post-container a:hover {
+    color: var(--primary-color-1);
+}
+
+.custom-post-container .wp-block-file {
+    background-color: #e0ded9;
+    padding: 20px;
+    margin-block: 24px;
+    box-shadow: 2px 2px 11px 0 var(--primary-color-1);
+    /* width: 80%; */
+}
+
+.custom-post-container .wp-block-group {
+
+}
+
