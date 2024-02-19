@@ -20,7 +20,7 @@
                     while ($category_posts->have_posts()) :
                         $category_posts->the_post();
                         ?>
-                        <div class="carousel-item <?php if ($i == 0) echo 'active'; ?>" data-bs-interval="10000">
+                        <div class="carousel-item <?php if ($i == 0) echo 'active'; ?>" data-bs-interval="5000">
                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                         </div>
                         <?php
@@ -30,7 +30,7 @@
                 endif;
                 ?>
             </div>
-            <?php if (isset($i)) :?>
+            <?php if (isset($i)) : // display the carousel indicators if there is at least one post?>
                 <div class="carousel-indicators">
                     <?php for ($j=0; $j<$i; $j++) :?>
                         <button type="button" data-bs-target="#carousel" data-bs-slide-to="<?php echo $j;?>" <?php if ($j==0) echo 'class="active" aria-current="true';?> aria-label="Slide <?php echo $j+1;?>"></button>

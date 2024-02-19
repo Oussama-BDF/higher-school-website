@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <h2>ECOLE SUPERIEURE DE TECHNOLOGIE DE SIDI BENNOUR</h2>
-                <p style="margin: 0;">L'Ecole Supérieure de Technologie Sidi Bennour (ESTSB) est un établissement public d'enseignement supérieur à finalité de formation des Techniciens Supérieurs. Elle a été créée en Août 2016 par le Ministère de l'Enseignement Supérieur, de la Formation des Cadres et de la Recherche Scientifique du Royaume du Maroc. L'ESTSB est une composante de l'Université Chouaib Doukkali d'El Jadida. Sa vocation est de former des Techniciens Supérieurs polyvalents, hautement qualifiés et immédiatement opérationnels après leur sortie de l'Ecole en tant que collaborateurs d'ingénieurs et de managers. </p>
+                <p>L'Ecole Supérieure de Technologie Sidi Bennour (ESTSB) est un établissement public d'enseignement supérieur à finalité de formation des Techniciens Supérieurs. Elle a été créée en Août 2016 par le Ministère de l'Enseignement Supérieur, de la Formation des Cadres et de la Recherche Scientifique du Royaume du Maroc. L'ESTSB est une composante de l'Université Chouaib Doukkali d'El Jadida. Sa vocation est de former des Techniciens Supérieurs polyvalents, hautement qualifiés et immédiatement opérationnels après leur sortie de l'Ecole en tant que collaborateurs d'ingénieurs et de managers. </p>
             </div>
             <div class="col col-lg-4">
                 <div id="thumbnail_container" class="thumbnail_container">

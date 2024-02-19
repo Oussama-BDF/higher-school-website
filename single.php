@@ -6,8 +6,7 @@
  */
 ?>
 <?php
-    $classe;
-    if(has_category('emploi') || has_category('resultat') || has_category('filiere')) {
+    if(has_category('emplois') || has_category('resultats') || has_category('filieres')) {
         $classe = "custom-post-container";
     }
 
@@ -20,8 +19,8 @@
 <section class="post mrg-b-60">
     <div class="container">
         <div class="main-post">
-            <?php the_title('<h2 class="post-title">', '</h2>');?>
-            <div class="post-content <?php echo $classe; ?>">
+            <?php the_title('<h2 class="heading">', '</h2>');?>
+            <div class="post-content <?php if (isset($classe))  echo $classe; ?>">
                 <?php the_content(); ?>
             </div>
         </div> 

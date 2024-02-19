@@ -1,25 +1,185 @@
-.page .main-post .post-title{
+h2.heading {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 15px;
+    width: 100%;
     background-color: var(--primary-color-2);
     color: var(--secondary-color-2);
     text-align: center;
-    width: 100%;
-    display: block;
-    padding: 15px;
-    margin-bottom: 40px;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
+@media (max-width: 575px) {
+    .post-excerpt-section h2.heading {
+        width: 95%;
+    }
+}
+
+/* Start The Posts Excerpt Section */
+.post-excerpt-section .main-post {
+    background-color: white;
+    box-shadow: 2px 2px 11px 0 #05557199;
+}
+
+.post-excerpt-section .col-md-12:not(:last-child) .main-post,
+.post-excerpt-section .col-md-4:not(:nth-last-child(-n+3)) .main-post {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px){
+    .post-excerpt-section .col-md-4:not(:last-child) .main-post {
+        margin-bottom: 24px;
+    }
+}
+
+.post-excerpt-section .main-post a {
+    text-decoration: none;
+    color: #777;
+}
+
+.post-excerpt-section .main-post:hover > .post-link {
+    color: var(--primary-color-2);
+}
+
+.post-excerpt-section .main-post .post-img {
+    height: 198px;
+    border-bottom: 1px solid var(--secondary-color-3);
+}
+
+.post-excerpt-section .main-post .post-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.post-excerpt-section .main-post:hover .post-img {
+    background-color: #000;
+}
+
+.post-excerpt-section .main-post:hover .post-img img  {
+    opacity: 0.80;
+}
+
+.post-excerpt-section .main-post .post-content {
+    padding: 20px;
+    position: relative;
+}
+
+.post-excerpt-section .main-post .post-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    min-height: 46px;
+    margin: 0 0 10px;
+    color: #777;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.post-excerpt-section .main-post:hover .post-title {
+    color: var(--primary-color-1);
+}
+
+.post-excerpt-section .main-post .post-excerpt {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    min-height: 54.375px;
+    line-height: 1.7;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.post-excerpt-section .main-post .read-post {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    transform: translate(0, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: var(--primary-color-1);
+    box-shadow: 0px 0px 14px 0 var(--primary-color-1);
+    text-decoration: none;
+}
+
+.post-excerpt-section .main-post .read-post:hover {
+    background: var(--secondary-color-2);
+}
+
+.post-excerpt-section .main-post i {
+    margin-inline: 5px;
+}
+
+.post-excerpt-section .main-post .post-metadata {
+    text-align: center;
+}
+
+.post-excerpt-section .main-post .post-date{
+    font-size: 14px;
+}
+
+.post-excerpt-section .read-more {
+    position: relative;
+    margin-top: 0px;
+}
+
+.post-excerpt-section .read-more > span{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding-inline: 12px;
+    border: 1px solid var(--secondary-color-3);
+    border-radius: 5px;
+    background-color: var(--secondary-color-2);
+    text-align: center;
+}
+
+.post-excerpt-section .read-more a {
+    text-decoration: none;
+    color: var(--primary-color-1);
+}
+
+.post-excerpt-section .not-yet {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.post-excerpt-section.custom .col-md-12 {
+    width: 80%;
+}
+
+.post-excerpt-section.custom .main-post .post-title {
+    display: block;
+    margin-block: 10px;
+    min-height: 0;
+    letter-spacing: 0px;
+    font-size: 17px;
+    white-space: normal;
+}
+
+.post-excerpt-section.custom .main-post .post-content {
+    padding: 5px;
+}
+/* End The Post Excerpt Section */
 
 
+/* Start The Page Section */
 .page .wp-block-group > .wp-block-group img{
     border-radius: 100%;
     border: 3px solid var(--primary-color-1);
-}
-
-.page .wp-block-group > .wp-block-group img{
-    /* min-width: 205px; */
 }
 
 @media (max-width: 991px) {
@@ -27,3 +187,99 @@
         padding-bottom: 40px;
     }
 }
+/* *Start The Contact Page* */
+.page .wpcf7-form > p {
+    display: flex;
+    gap: 10px;
+}
+
+.page .wpcf7-form > p > label {
+    width: 100%;
+}
+
+.page .wpcf7-form > p > label > .wpcf7-form-control-wrap > input {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.page .wpcf7-form > p > label > .wpcf7-form-control-wrap > textarea {
+    width: 100%;
+    height: 100px;
+    padding: 5px 10px;
+    resize: none;
+}
+
+.page .wpcf7-form > p > input {
+    padding: 5px 15px;
+    background-color: var(--primary-color-2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.page .page-contact .map-container {
+    border:1px solid gray;
+}
+
+.page .page-contact .wpcf7 {
+    width: 57%;
+}
+
+.page .page-contact .wpcf7 form > p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1198px) {
+    .page .page-contact .wpcf7 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+.post-content {
+    /* justify-content: center; */
+}
+}
+/* *End The Contact Page* */
+
+
+/* *Start The AMO Page* */
+.link-amo {
+    text-decoration: none;
+    background: var(--primary-color-1);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    margin-block: 10px;
+}
+
+.link-amo:hover {
+    color: white;
+    background: var(--primary-color-2);
+}
+
+@media (max-width: 991px) {
+    .col {
+        order: 1;
+    }
+}
+
+/* *End The AMO Page* */
+
+/* Start the Gallery Page */
+.gallery > figure:hover img{
+    opacity: 0.6;
+}
+
+.gallery > figure:hover{
+    background-color: #000;
+}
+/* img opacity: 0.80;
+img cont background-color: #000;
+*/
+/* End the Gallery Page */
+
+/* End The Page Section */

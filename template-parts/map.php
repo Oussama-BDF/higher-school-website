@@ -1,0 +1,3 @@
+<div class="map-container" style="border:1px solid gray; margin-bottom: 10px;">
+    <iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.406664057372!2d-8.4236539!3d32.648620799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaf299e18cb8409%3A0xb0ac92f5afdcef5d!2sEST%20%3A%20%C3%89cole%20Sup%C3%A9rieure%20de%20Technologie_Sidi%20Bennour!5e0!3m2!1sfr!2sma!4v1706884887505!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>

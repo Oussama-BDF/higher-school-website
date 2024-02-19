@@ -7,25 +7,27 @@
  * @package EST-SB
  */
 ?>
-<!-- Start The Posts Section -->
+<!-- Start The Posts Excerpt Section -->
 <?php
 $included_categories = array('Actualités', 'Événements', 'Departements');
 
-foreach ($included_categories as $category_name) :
-    $category = get_category_by_slug($category_name);
+for ($i = 0; $i < 3; $i++) :
+    $category = get_category_by_slug($included_categories[$i]);
 
     if ($category) {
         $category_posts = new WP_Query(array('cat' => $category->term_id, 'posts_per_page' => 3));
 
-        $dep_cat = get_category_by_slug('Départements');
-        if ($dep_cat && $category->name === $dep_cat->name) $dep_cat=true;
-
         if ($category_posts->have_posts()) :
             ?>
-            <section class="post-excerpt mrg-b-60">
+            <section class="post-excerpt-section mrg-b-60">
                 <div class="container">
                     <div class="row">
-                        <h2><?php echo $category->name; ?></h2>
+                        <h2 class="heading">
+                            <?php
+                            if ($i!==2) echo "Dérnières ";
+                            echo $category->name;
+                            ?>
+                        </h2>
                         <?php
                         while ($category_posts->have_posts()) :
                             $category_posts->the_post();
@@ -38,16 +40,14 @@ foreach ($included_categories as $category_name) :
                                             if (has_post_thumbnail()) {
                                                 the_post_thumbnail('', ['class' => 'img-responsive']);
                                             } else {
-                                                echo '<img class="img-responsive" src="' . get_template_directory_uri() . '/img/default-post-img.jpg" alt="">';
+                                                echo '<img class="img-responsive" src="' . get_template_directory_uri() . '/assets/img/default-post-img.jpg" alt="">';
                                             }
                                             ?>
                                         </div>
                                         <div class="post-content">
-                                            <h3 class="post-title">
-                                                <?php the_title(); ?>
-                                            </h3>
+                                            <?php the_title('<h3 class="post-title">', '</h3>'); ?>
                                             <?php
-                                            if ($dep_cat!==true) :
+                                            if ($i!==2) :
                                                 $excerpt = get_the_excerpt();
                                                 if (!empty($excerpt))
                                                     echo '<p class="post-excerpt">' . $excerpt . '</p>';
@@ -70,7 +70,7 @@ foreach ($included_categories as $category_name) :
                         ?>
                     </div>
 
-                    <?php if ($dep_cat!==true) : ?>
+                    <?php if ($i!==2) : ?>
                         <div class="read-more">
                             <span>
                                 <a href="<?php echo esc_url(get_category_link($category->term_id)) ?>">
@@ -85,6 +85,6 @@ foreach ($included_categories as $category_name) :
         <?php endif; ?>
     <?php } else  continue; // Skip to the next iteration if the category is not found ?>
 
-<?php endforeach; ?>
+<?php endfor; ?>
 
-<!-- End The Posts Section -->
+<!-- End The Posts Excerpt Section -->

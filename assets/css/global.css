@@ -49,9 +49,13 @@ body {
 }
 
 .mrg-b-60 {
-    margin-block: 60px;
+    margin-block: 65px;
 }
 
 .pd-b-60 {
     padding-block: 60px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }

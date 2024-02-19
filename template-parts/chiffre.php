@@ -16,7 +16,7 @@
                     <i class="fa-solid fa-book"></i>
                 </div>
                 <span class="counter" id="sectorsCount">0</span>
-                <div class="title">Nombre de filières </div>
+                <div class="title">Filières </div>
             </li>
             <li class="col-lg-2">
                 <div class="item">

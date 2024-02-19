@@ -51,7 +51,7 @@ function countUp(targetElement, start, end, duration) {
 
     function animateCount(current, count) {
         setTimeout(() => {
-            current += 2;
+            current += 1;
             updateCount(current);
 
             if (current < count) {
@@ -65,9 +65,9 @@ function countUp(targetElement, start, end, duration) {
 
 function startCounting(entries, observer) {
     if (entries[0].isIntersecting) {
-        countUp(document.getElementById("teachersCount"), 0, 20, 500);
-        countUp(document.getElementById("adminCount"), 0, 5, 500);
-        countUp(document.getElementById("sectorsCount"), 0, 10, 500);
+        countUp(document.getElementById("teachersCount"), 0, 32, 500);
+        countUp(document.getElementById("adminCount"), 0, 3, 500);
+        countUp(document.getElementById("sectorsCount"), 0, 8, 500);
         countUp(document.getElementById("studentsCount"), 0, 500, 500);
         observer.unobserve(entries[0].target);
     }
@@ -77,3 +77,32 @@ const observer = new IntersectionObserver(startCounting, { threshold: 0.5 });
 
 const countSection = document.getElementById("countSection");
 observer.observe(countSection);
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Add your form ID or class selector
+    var formSelector = '.wpcf7-form';
+
+    // Add your custom class
+    var customClass = 'your-custom-class';
+
+    // Check if the form exists on the page
+    var form = document.querySelector(formSelector);
+    if (form) {
+        // Add the custom class to the form
+        form.classList.add(customClass);
+    }
+});
+
+
+
+
+
+
+

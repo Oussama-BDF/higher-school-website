@@ -9,12 +9,10 @@
 ?>
 <?php get_header(); ?>
 
-<section class="post-excerpt mrg-b-60">
+<section class="post-excerpt-section mrg-b-60">
     <div class="container">
         <div class="row">
-            <h2 class="archive-title">
-                <?php single_cat_title();?>
-            </h2>
+            <h2 class="heading"><?php single_cat_title();?></h2>
             <?php
             if (have_posts()) {
                 while (have_posts()) :
@@ -34,13 +32,12 @@
                                 </div>
                                 <div class="post-content">
                                     <?php the_title('<h3 class="post-title">', '</h3>'); ?>
-
                                     <?php
                                     $dep_cat = get_category_by_slug('Départements');
                                     if ($dep_cat && $dep_cat->name !== single_cat_title('', false)) :
                                         $excerpt = get_the_excerpt();
                                         if (!empty($excerpt)) {
-                                            echo '<p class="post-excerpt">' . $excerpt . '</p>';
+                                            echo "<p class='post-excerpt' >" . $excerpt . $is_rtl . '</p>';
                                         } else {
                                             the_title("<p class='post-excerpt'>", "</p>");
                                         }
@@ -59,7 +56,7 @@
                     <?php
                 endwhile;
             } else {
-                echo "<span class='not-yet'>Il n'y a pas encore de posts!!</span>";
+                echo "<span class='not-yet'>Désolé, Il n'y a pas encore d'éléments!!</span>";
             }
             ?>
         </div>
