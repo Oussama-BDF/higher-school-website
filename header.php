@@ -21,6 +21,15 @@
 </head>
 
 <body>
+  <!-- Start Preload Bar -->
+  <!-- <div class="preload-bar d-flex justify-content-center align-items-center">
+    <div class="preload-container" style="position: relative">
+      <div class="circle"> </div>
+      <img src="<?php echo get_template_directory_uri()?>/assets/icon/loding-img.svg" alt="" style="width:80px">
+    </div>
+  </div> -->
+  <!-- End Preload Bar -->
+
   <!-- Start Top Nav Bar -->
   <nav class="top-nav navbar navbar-expand-lg bg-body-tertiary navbar-light">
     <div class="container container-fluid">
@@ -68,7 +77,7 @@
     <div class="container container-fluid">
         <div class="">
           <a class="" href="<?php home_url();?>" title="Home" id="site-name-square">
-            <img class="nav-link img-fluid" style="width: 285px" src="<?php echo get_template_directory_uri()?>/assets/icon/est-ucd-black.svg?v=1.1.6" class="img-responsive" alt="">
+            <img class="nav-link img-fluid" style="width: 285px" src="<?php echo get_template_directory_uri()?>/assets/icon/est-ucd-black.svg" class="img-responsive" alt="">
           </a>
         </div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row justify-content-between">

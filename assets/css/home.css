@@ -13,7 +13,7 @@
 }
 
 .carousel-section .carousel-item {
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     transform: translate(0, -50%);
     padding-inline: 13%;
@@ -27,7 +27,11 @@
     }
 }
 
-.carousel-section .carousel-item > a {
+.carousel-section .wp-block-file:not(.wp-element-button) {
+    font-size: unset;
+}
+
+.carousel-section .carousel-item  a {
     display: inline-block;
     padding: 10px;
     background: var(--primary-color-2);
@@ -38,7 +42,7 @@
     text-transform: uppercase;
 }
 
-.carousel-section .carousel-item > a:hover {
+.carousel-section .carousel-item  a:hover {
     color: #292929;
 }
 

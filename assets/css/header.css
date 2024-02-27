@@ -1,3 +1,33 @@
+/* Start the loading bar */
+@keyframes rotate360 {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(1turn); }
+  }
+.preload-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    transition: height 0.3s ease;
+}
+
+.preload-bar .circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color-1);
+    border-block-start-color: black;
+    animation: rotate360 1s linear infinite;
+}
+
+.loaded {
+    height: 0%;
+}
+/* End the loading bar */
 /* Start Top Nav Bar */
 .top-nav {
     background-color: var(--primary-color-1);

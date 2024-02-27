@@ -7,10 +7,8 @@
 ?>
 <?php
     if(has_category('emplois') || has_category('resultats') || has_category('filieres')) {
-        $classe = "custom-post-container";
-    }
-
-    if(has_category('departements')) {
+        $classe = "custom";
+    }else if(has_category('departements')) {
         $classe = "departement";
     }
 ?>

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the category "emploi".
+ * The template for displaying the category "filieres".
  *  
  * @package EST-SB
  */

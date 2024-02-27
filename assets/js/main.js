@@ -38,7 +38,7 @@ addDropdownToggleClass();
 window.addEventListener('resize', addDropdownToggleClass);
 
 /**
- * Count Function
+ * Count Function (Ecole En chiffre)
  */
 
 function countUp(targetElement, start, end, duration) {
@@ -72,37 +72,18 @@ function startCounting(entries, observer) {
         observer.unobserve(entries[0].target);
     }
 }
-
-const observer = new IntersectionObserver(startCounting, { threshold: 0.5 });
-
-const countSection = document.getElementById("countSection");
-observer.observe(countSection);
-
+if (countSection = document.getElementById("countSection")) {
+    const observer = new IntersectionObserver(startCounting, { threshold: 0.5 });
+    observer.observe(countSection);
+}
 
 
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Add your form ID or class selector
-    var formSelector = '.wpcf7-form';
-
-    // Add your custom class
-    var customClass = 'your-custom-class';
-
-    // Check if the form exists on the page
-    var form = document.querySelector(formSelector);
-    if (form) {
-        // Add the custom class to the form
-        form.classList.add(customClass);
-    }
-});
-
-
-
-
-
-
-
+/**
+ * preload Bar Function (Ecole En chiffre)
+ */
+// const preloader = document.querySelector(".preload-bar");
+// const preloadImg = document.querySelector(".preload-bar .preload-container")
+// window.addEventListener("load", function () {
+//   preloader.classList.add("loaded");
+//   preloadImg.style.display = "none";
+// });

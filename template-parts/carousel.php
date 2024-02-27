@@ -20,8 +20,17 @@
                     while ($category_posts->have_posts()) :
                         $category_posts->the_post();
                         ?>
-                        <div class="carousel-item <?php if ($i == 0) echo 'active'; ?>" data-bs-interval="5000">
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        <div class="carousel-item <?php if ($i == 0) echo 'active'; ?>" data-bs-interval="100000000">
+                            <?php
+                            $categories = get_the_category();
+                            if (sizeof($categories) == 1) {
+                                the_content();
+                            } else {
+                                ?>
+                                <a href="<?php the_permalink(); ?>"><?php the_title();?></a>
+                                <?php
+                            }
+                            ?>
                         </div>
                         <?php
                         $i++;

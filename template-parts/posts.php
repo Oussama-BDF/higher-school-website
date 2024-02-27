@@ -9,7 +9,7 @@
 ?>
 <!-- Start The Posts Excerpt Section -->
 <?php
-$included_categories = array('Actualités', 'Événements', 'Departements');
+$included_categories = array('actualites', 'evenements', 'departements');
 
 for ($i = 0; $i < 3; $i++) :
     $category = get_category_by_slug($included_categories[$i]);
@@ -19,7 +19,7 @@ for ($i = 0; $i < 3; $i++) :
 
         if ($category_posts->have_posts()) :
             ?>
-            <section class="post-excerpt-section mrg-b-60">
+            <section class="archive-section mrg-b-60">
                 <div class="container">
                     <div class="row">
                         <h2 class="heading">
@@ -37,22 +37,16 @@ for ($i = 0; $i < 3; $i++) :
                                     <a class="post-link" href="<?php the_permalink(); ?>">
                                         <div class="post-img">
                                             <?php
-                                            if (has_post_thumbnail()) {
-                                                the_post_thumbnail('', ['class' => 'img-responsive']);
-                                            } else {
-                                                echo '<img class="img-responsive" src="' . get_template_directory_uri() . '/assets/img/default-post-img.jpg" alt="">';
-                                            }
+                                            // display the thumbnail image, else display the default image
+                                            echo has_post_thumbnail() ? the_post_thumbnail('', ['class' => 'img-responsive']) : '<img class="img-responsive" src="'. get_template_directory_uri() . '/assets/img/default-post-img.jpg" alt="">';
                                             ?>
                                         </div>
                                         <div class="post-content">
                                             <?php the_title('<h3 class="post-title">', '</h3>'); ?>
                                             <?php
                                             if ($i!==2) :
-                                                $excerpt = get_the_excerpt();
-                                                if (!empty($excerpt))
-                                                    echo '<p class="post-excerpt">' . $excerpt . '</p>';
-                                                else
-                                                    the_title("<p class='post-excerpt'>", "</p>");
+                                                // Display the post excerpt, else display the title
+                                                echo get_the_excerpt()? "<p class='post-excerpt' >" . $excerpt . "</p>" : the_title("<p class='post-excerpt'>", "</p>");
                                                 ?>
                                                 <hr>
                                                 <div class="post-metadata">

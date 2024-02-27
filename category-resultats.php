@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the category "resultat".
+ * The template for displaying the category "resultats".
  *  
  * @package EST-SB
  */
