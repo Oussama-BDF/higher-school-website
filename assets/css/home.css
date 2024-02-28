@@ -1,29 +1,19 @@
 /* Start The Carousel */
-.carousel-section {
-    background: url(../img/slider.jpg) no-repeat center / cover;
-}
-
-.carousel-section > .carousel {
-    background-color: #077aa261;
-    height: 540px;
-}
-
-.carousel-section .carousel-inner {
-    height: 100%;
+.carousel-section .carousel-item img {
+    width: 100%;
+    height: auto;
+    height: 550px;
+    object-fit: cover;
 }
 
 .carousel-section .carousel-item {
-    /* position: absolute; */
-    top: 50%;
-    transform: translate(0, -50%);
-    padding-inline: 13%;
     font-size: 200%;
     text-align: center;
 }
 
 @media (max-width: 1024px){
-    .carousel-section > .carousel {
-        height: 450px;
+    .carousel-section .carousel-item img {
+        height: 352px;
     }
     .carousel-section .carousel-item {
         font-size: 180%;
@@ -31,27 +21,26 @@
 }
 
 @media (max-width: 768px){
-    .carousel-section > .carousel {
-        height: 360px;
+    .carousel-section .carousel-item img {
+        height: 264px;
     }
     .carousel-section .carousel-item {
         font-size: 130%;
     }
 }
 
-@media (max-width: 500px){
-    .carousel-section > .carousel {
-        height: 320px;
+@media (max-width: 425px){
+    .carousel-section .carousel-item img {
+        height: 280px;
+    }
+    .carousel-section .carousel-item {
+        font-size: 110%;
     }
 }
 
-@media (max-width: 425px){
-    .carousel-section > .carousel {
-        height: 310px;
-    }
+@media (max-width: 320px){
     .carousel-section .carousel-item {
-        font-size: 100%;
-        padding-inline: 20%;
+        font-size: 90%;
     }
 }
 
@@ -60,6 +49,11 @@
 }
 
 .carousel-section .carousel-item  a {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
     display: inline-block;
     padding: 10px;
     background: var(--primary-color-2);
@@ -104,16 +98,6 @@
         height: 2rem !important;
     }
 }
-
-.carousel-section .active.carousel-item-start,
-.carousel-section .carousel-item-prev:not(.carousel-item-end) {
-    transform: translate(-100%, -50%);
-}
-
-.carousel-section .active.carousel-item-end,
-.carousel-section .carousel-item-next:not(.carousel-item-start) {
-    transform: translate(100%, -50%);
-}
 /* End The Carousel */
 
 
@@ -122,6 +106,10 @@
     padding-block: 20px;
     background-color: var(--secondary-color-2);
     min-height: 360px;
+}
+
+.user-spaces-section .container {
+    padding-inline: 30px;
 }
 
 .user-spaces-section ul {

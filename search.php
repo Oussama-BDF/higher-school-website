@@ -9,7 +9,7 @@
 ?>
 <?php get_header(); ?>
 
-<section class="post-excerpt-section mrg-b-60">
+<section class="archive-section mrg-b-60">
     <div class="container">
         <div class="row">
             <h2 class="heading">SEARCH RESULTS FOR: <?php echo esc_html(get_search_query()); ?></h2>
@@ -23,11 +23,8 @@
                             <a class="post-link" href="<?php the_permalink();?>">
                                 <div class="post-img">
                                     <?php
-                                    if (has_post_thumbnail()) {
-                                        the_post_thumbnail('', ['class' => 'img-responsive']);
-                                    } else {
-                                        echo '<img class="img-responsive" src="'. get_template_directory_uri() . '/assets/img/default-post-img.jpg" alt="">';
-                                    }
+                                    // display the thumbnail image, else display the default image
+                                    echo has_post_thumbnail() ? the_post_thumbnail('', ['class' => 'img-responsive']) : '<img class="img-responsive" src="'. get_template_directory_uri() . '/assets/img/default-post-img.jpg" alt="">';
                                     ?>
                                 </div>
                                 <div class="post-content">

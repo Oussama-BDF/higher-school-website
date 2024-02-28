@@ -52,18 +52,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">
-              <i class="mi10 fa-brands fa-instagram"></i>
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" aria-current="page" href="https://web.facebook.com/profile.php?id=100067832741526"  target="_blank">
               <i class="mi10 fa-brands fa-facebook-f"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">
-              <i class="mi10 fa-brands fa-x-twitter"></i>
+            <a class="nav-link" aria-current="page" href="mailto:estsb@gmail.com">
+              <i class="mi10 fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="tel:0606060606">
+              <i class="mi10 fa-solid fa-phone"></i>
             </a>
           </li>
         </ul>
@@ -82,7 +82,7 @@
         </div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row justify-content-between">
           <li class="nav-item">
-            <a class="nav-link d-flex align-items-center" aria-current="page" href="mailto:estsb.ucd.ac.ma">
+            <a class="nav-link d-flex align-items-center" aria-current="page" href="mailto:estsb@gmail.com">
               <i class="link-img mi10 fa-solid fa-envelope"></i>
               <div class="link-text">
                   <span>EMAIL :</span>
