@@ -22,21 +22,18 @@
     right: 50%;
     transform: translate(50%, -50%);
     display: inline-block;
-    padding: 10px;
-    background: var(--primary-color-2);
+    padding-inline: 120px;
+    background: rgba(0, 0, 0, 0.66);
     color: white;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: -1px;
     text-transform: uppercase;
-}
-
-.carousel-section .carousel-item  a:hover {
-    color: #292929;
-}
-
-.carousel-section .carousel-indicators  {
-    z-index: 0;
+    height: 100%;
+    width: 101%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-section .carousel-control-prev-icon,
@@ -50,6 +47,10 @@
     background-color: white;
 }
 
+.carousel-section .carousel-indicators {
+    z-index: 1;
+}
+
 .carousel-section .carousel-control-prev-icon {
     background-image: url(../img/carousel-chevron-left-large.svg);
 }
@@ -58,22 +59,33 @@
     background-image: url(../img/carousel-chevron-right-large.svg);
 }
 
+@media (max-width: 1600px){
+    .carousel-section .carousel-item  a {
+        padding-inline: 160px;
+    }
+}
 
 @media (max-width: 1024px){
     .carousel-section .carousel-item img {
-        height: 352px;
+        height: 400px;
     }
     .carousel-section .carousel-item {
         font-size: 180%;
+    }
+    .carousel-section .carousel-item  a {
+        padding-inline: 120px;
     }
 }
 
 @media (max-width: 768px){
     .carousel-section .carousel-item img {
-        height: 264px;
+        height: 330px;
     }
     .carousel-section .carousel-item {
         font-size: 130%;
+    }
+    .carousel-section .carousel-item  a {
+        padding-inline: 90px;
     }
 }
 
@@ -81,9 +93,16 @@
     .carousel-section .carousel-item img {
         height: 280px;
     }
+    .carousel-section .carousel-item  a {
+        padding-inline: 50px;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none;
+    }
 }
 
-@media (max-width: 320px){
+@media (max-width: 375px){
     .carousel-section .carousel-item {
         font-size: 90%;
     }

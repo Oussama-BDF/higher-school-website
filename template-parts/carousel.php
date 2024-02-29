@@ -20,7 +20,7 @@
                     while ($category_posts->have_posts()) :
                         $category_posts->the_post();
                         ?>
-                        <div class="carousel-item <?php if ($i == 0) echo 'active'; ?>" data-bs-interval="500000000">
+                        <div class="carousel-item <?php if ($i == 0) echo 'active'; ?>" data-bs-interval="5000">
                             <?php echo has_post_thumbnail() ? the_post_thumbnail('', ['class' => '']) : '<img class="" src="'. get_template_directory_uri() . '/assets/img/default-post-img.jpg" alt="">';?>
                             <?php
                             $categories = get_the_category();
