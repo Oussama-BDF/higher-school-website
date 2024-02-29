@@ -11,39 +11,6 @@
     text-align: center;
 }
 
-@media (max-width: 1024px){
-    .carousel-section .carousel-item img {
-        height: 352px;
-    }
-    .carousel-section .carousel-item {
-        font-size: 180%;
-    }
-}
-
-@media (max-width: 768px){
-    .carousel-section .carousel-item img {
-        height: 264px;
-    }
-    .carousel-section .carousel-item {
-        font-size: 130%;
-    }
-}
-
-@media (max-width: 425px){
-    .carousel-section .carousel-item img {
-        height: 280px;
-    }
-    .carousel-section .carousel-item {
-        font-size: 110%;
-    }
-}
-
-@media (max-width: 320px){
-    .carousel-section .carousel-item {
-        font-size: 90%;
-    }
-}
-
 .carousel-section .wp-block-file:not(.wp-element-button) {
     font-size: unset;
 }
@@ -89,6 +56,37 @@
 
 .carousel-section .carousel-control-next-icon {
     background-image: url(../img/carousel-chevron-right-large.svg);
+}
+
+
+@media (max-width: 1024px){
+    .carousel-section .carousel-item img {
+        height: 352px;
+    }
+    .carousel-section .carousel-item {
+        font-size: 180%;
+    }
+}
+
+@media (max-width: 768px){
+    .carousel-section .carousel-item img {
+        height: 264px;
+    }
+    .carousel-section .carousel-item {
+        font-size: 130%;
+    }
+}
+
+@media (max-width: 425px){
+    .carousel-section .carousel-item img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 320px){
+    .carousel-section .carousel-item {
+        font-size: 90%;
+    }
 }
 
 @media (max-width: 700px){

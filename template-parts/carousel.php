@@ -28,8 +28,8 @@
                                 the_content();
                             } else {
                                 ?>
-                                 <a href="<?php the_permalink(); ?>"><?php the_title();?></a>
-                                 <?php
+                                <a href="<?php the_permalink(); ?>"><?php the_title();?></a>
+                                <?php
                             }
                             ?>
                         </div>
